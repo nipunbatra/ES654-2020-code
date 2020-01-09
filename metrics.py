@@ -1,17 +1,18 @@
 
-def entropy(Y):
+def accuracy(y_hat, y):
     """
-    Function to calculate the entropy 
+    Function to calculate the accuracy
+    @TODO: Write the formula
 
     Inputs:
-    > Y: Labels
-    Outpus:
-    > Returns a value of the entropy
+    > y_hat: pd.Series of predictions
+    y: pd.Series of ground truth
+    > Returns the accuracy
     """
-    
+    # TODO: Write here
     pass
 
-def gini_index(Y):
+def precision(y_hat, y):
     """
     Function to calculate the gini index
 
@@ -22,7 +23,7 @@ def gini_index(Y):
     """
     pass
 
-def information_gain(Y, attr):
+def recall(y_hat, y):
     """
     Function to calculate the information gain
     
@@ -32,4 +33,10 @@ def information_gain(Y, attr):
     Outputs:
     > Return the information gain
     """
+    pass
+
+def rmse(y_hat, y):
+    pass
+
+def mae(y_hat, y):
     pass
