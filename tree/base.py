@@ -12,6 +12,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from .utils import entropy, information_gain, gini_index
 
+np.random.seed(42)
+
 class DecisionTree():
     def __init__(self, criterion):
         """
