@@ -34,7 +34,7 @@ X = np.random.randn(N, P)
 y = np.random.randint(P, size = N)
 
 tree = DecisionTree()
-tree.fit(pd.DataFrame(X), pd.Series(y))
+tree.fit(pd.DataFrame(X), pd.Series(y, dtype="category"))
 tree.predict(pd.DataFrame(X))
 tree.plot()
 
@@ -47,7 +47,7 @@ X = np.random.randint(N,size = (N,P))
 y = np.random.randint(P, size = N)
 
 tree = DecisionTree()
-tree.fit(pd.DataFrame(X), pd.Series(y))
+tree.fit(pd.DataFrame(X), pd.Series(y, dtype="category"))
 tree.predict(pd.DataFrame(X))
 tree.plot()
 
