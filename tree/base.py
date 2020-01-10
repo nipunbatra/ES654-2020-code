@@ -16,8 +16,8 @@ class DecisionTree():
     def __init__(criterion):
         """
         Put all infromation to initialize your tree here.
-        
-        Example: Max Depth = 4
+        Inputs:
+        > criterion : {"information_gain", "gini_index"}
         """
         pass
 
