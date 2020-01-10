@@ -2,7 +2,6 @@
 def accuracy(y_hat, y):
     """
     Function to calculate the accuracy
-    @TODO: Write the formula
 
     Inputs:
     > y_hat: pd.Series of predictions
