@@ -19,7 +19,7 @@ You should run _usage.py_ to check your solutions.
 3. Use 5 fold cross-validation on the dataset. Using nested cross-validation find the optimum depth of the tree. **[2 marks]**
 
 4. 
-  a) Show the usage of your decision tree for the [real estate price prediction regression](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set) problem. **[1 mark]**
+    a) Show the usage of your decision tree for the [real estate price prediction regression](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set) problem. **[1 mark]**
  Compare the performance of your model with the decision tree module from scikit learn. \textbf{[1 mark]}
 	\item Create some fake data to do some experiments on the runtime complexity of your decision tree algorithm. Create a dataset with N samples and M binary features. Vary M and N to plot the time taken for: 1) learning the tree, 2) predicting for test data. How do these results compare with theoretical time complexity for decision tree creation and prediction. You should do the comparison for all the four cases of decision trees. \textbf{[2 marks]}	
 	
