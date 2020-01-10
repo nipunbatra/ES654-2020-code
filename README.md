@@ -14,7 +14,7 @@ The code should be written in Python and not use existing libraries other than t
       - `utils.py`: Complete all utility functions.
       - `__init__.py`: **Do not edit this**
 
-You should run _usage.py_ to check your solutions. 
+> You should run _usage.py_ to check your solutions. 
 
 2. 
     a) Show the usage of *your decision tree* on the [IRIS](https://archive.ics.uci.edu/ml/datasets/Iris) dataset. The first 70% of the data should be used for training purposes and the remaining 30% for test purposes. Show the accuracy, per-class precision and recall of the decision tree you implemented on the test dataset. **[1 mark]**
