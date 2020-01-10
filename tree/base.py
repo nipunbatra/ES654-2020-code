@@ -33,6 +33,10 @@ class DecisionTree():
     def predict(X):
         """
         Funtion to run the decision tree on a data point
+        Input:
+        X: pd.DataFrame with rows as samples and columns as features
+        Output: 
+        y: pd.Series with rows corresponding to output variable. THe output variable in a row is the prediction for sample in corresponding row in X. 
         """
         pass
 
@@ -40,7 +44,7 @@ class DecisionTree():
         """
         Function to plot the tree
         
-        Example:
+        Output Example:
         ?(X1 > 4)
             Y: ?(X2 > 7)
                 Y: Class A
