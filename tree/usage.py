@@ -28,4 +28,38 @@ tree.plot()
 # Test case 2
 # Real Input and Discrete Output
 
-N = 
+N = 30
+P = 5
+X = np.random.randn(N, P)
+y = np.random.randint(P, size = N)
+
+tree = DecisionTree()
+tree.fit(pd.DataFrame(X), pd.Series(y))
+tree.predict(pd.DataFrame(X))
+tree.plot()
+
+# Test case 3
+# Discrete Input and Discrete Output
+
+N = 30
+P = 5
+X = np.random.randint(N,size = (N,P))
+y = np.random.randint(P, size = N)
+
+tree = DecisionTree()
+tree.fit(pd.DataFrame(X), pd.Series(y))
+tree.predict(pd.DataFrame(X))
+tree.plot()
+
+# Test case 4
+# Discrete Input and Real Output
+
+N = 30
+P = 5
+X = np.random.randint(N,size = (N,P))
+y = np.random.randn(N)
+
+tree = DecisionTree()
+tree.fit(pd.DataFrame(X), pd.Series(y))
+tree.predict(pd.DataFrame(X))
+tree.plot()
