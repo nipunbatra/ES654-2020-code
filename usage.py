@@ -20,7 +20,7 @@ P = 5
 X = np.random.randn(N, P)
 y = np.random.randn(N)
 
-tree = DecisionTree()
+tree = DecisionTree(criterion='information_gain') #Split based on Inf. Gain
 tree.fit(pd.DataFrame(X), pd.Series(y))
 tree.predict(pd.DataFrame(X))
 tree.plot()
@@ -33,7 +33,7 @@ P = 5
 X = np.random.randn(N, P)
 y = np.random.randint(P, size = N)
 
-tree = DecisionTree()
+tree = DecisionTree(criterion='information_gain') #Split based on Inf. Gain
 tree.fit(pd.DataFrame(X), pd.Series(y, dtype="category"))
 tree.predict(pd.DataFrame(X))
 tree.plot()
@@ -46,7 +46,7 @@ P = 5
 X = np.random.randint(N,size = (N,P))
 y = np.random.randint(P, size = N)
 
-tree = DecisionTree()
+tree = DecisionTree(criterion='information_gain') #Split based on Inf. Gain
 tree.fit(pd.DataFrame(X), pd.Series(y, dtype="category"))
 tree.predict(pd.DataFrame(X))
 tree.plot()
@@ -59,7 +59,7 @@ P = 5
 X = np.random.randint(N,size = (N,P))
 y = np.random.randn(N)
 
-tree = DecisionTree()
+tree = DecisionTree(criterion='information_gain') #Split based on Inf. Gain
 tree.fit(pd.DataFrame(X), pd.Series(y))
 tree.predict(pd.DataFrame(X))
 tree.plot()
