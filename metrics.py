@@ -6,37 +6,58 @@ def accuracy(y_hat, y):
 
     Inputs:
     > y_hat: pd.Series of predictions
-    y: pd.Series of ground truth
-    > Returns the accuracy
+    > y: pd.Series of ground truth
+    Output:
+    > Returns the accuracy as float
     """
     # TODO: Write here
     pass
 
 def precision(y_hat, y):
     """
-    Function to calculate the gini index
+    Function to calculate the precision
 
     Inputs:
-    > Y: Labels
-    Outpus:
-    > Returns a value of the gini index
+    > y_hat: pd.Series of predictions
+    > y: pd.Series of ground truth
+    Output:
+    > Returns the precision as float
     """
     pass
 
 def recall(y_hat, y):
     """
-    Function to calculate the information gain
+    Function to calculate the recall
     
     Inputs:
-    > Y: Labels
-    > attr: attribute at which the gain should be calculated
-    Outputs:
-    > Return the information gain
+    > y_hat: pd.Series of predictions
+    > y: pd.Series of ground truth
+    Output:
+    > Returns the recall as float
     """
     pass
 
 def rmse(y_hat, y):
+    """
+    Function to calculate the root-mean-squared-error(rmse)
+    
+    Inputs:
+    > y_hat: pd.Series of predictions
+    > y: pd.Series of ground truth
+    Output:
+    > Returns the rmse as float
+    """    
+    
     pass
 
 def mae(y_hat, y):
+    """
+    Function to calculate the mean-absolute-error(mae)
+    
+    Inputs:
+    > y_hat: pd.Series of predictions
+    > y: pd.Series of ground truth
+    Output:
+    > Returns the mae as float
+    """
     pass
