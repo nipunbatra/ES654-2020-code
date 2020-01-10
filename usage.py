@@ -10,7 +10,7 @@ You will be expected to use this to make trees for:
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from tree import DecisionTree
+from tree.base import DecisionTree
 
 # Test case 1
 # Real Input and Real Output
