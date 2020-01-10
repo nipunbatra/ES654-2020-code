@@ -7,14 +7,14 @@ You should run _usage.py_ to check your solutions.
 
 `1.md`: Write answers to subjective questions in this file.
 
-`metrics.py`: Complete all functions in this file. 
+`metrics.py`: Complete the performance metrics functions in this file. 
 
 `usage.py`: Run this file to check your solutions.
 
 tree (Directory): Module for decision tree.
   - `base.py` : Complete Decision Tree Class.
   - `utils.py`: Complete all utility functions.
-  - `__init__.py`: Do not edit this
+  - `__init__.py`: **Do not edit this**
+
  
- 
-  
+

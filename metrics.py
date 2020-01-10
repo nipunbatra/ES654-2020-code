@@ -18,25 +18,27 @@ def accuracy(y_hat, y):
     # TODO: Write here
     pass
 
-def precision(y_hat, y):
+def precision(y_hat, y, cls):
     """
     Function to calculate the precision
 
     Inputs:
     > y_hat: pd.Series of predictions
     > y: pd.Series of ground truth
+    > cls: The class chosen
     Output:
     > Returns the precision as float
     """
     pass
 
-def recall(y_hat, y):
+def recall(y_hat, y, cls):
     """
     Function to calculate the recall
-    
+
     Inputs:
     > y_hat: pd.Series of predictions
     > y: pd.Series of ground truth
+    > cls: The class chosen
     Output:
     > Returns the recall as float
     """
@@ -45,20 +47,20 @@ def recall(y_hat, y):
 def rmse(y_hat, y):
     """
     Function to calculate the root-mean-squared-error(rmse)
-    
+
     Inputs:
     > y_hat: pd.Series of predictions
     > y: pd.Series of ground truth
     Output:
     > Returns the rmse as float
-    """    
-    
+    """
+
     pass
 
 def mae(y_hat, y):
     """
     Function to calculate the mean-absolute-error(mae)
-    
+
     Inputs:
     > y_hat: pd.Series of predictions
     > y: pd.Series of ground truth

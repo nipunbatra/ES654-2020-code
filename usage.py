@@ -11,55 +11,78 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from tree.base import DecisionTree
+from metrics import *
 
 # Test case 1
 # Real Input and Real Output
 
 N = 30
 P = 5
-X = np.random.randn(N, P)
-y = np.random.randn(N)
+X = pd.DataFrame(np.random.randn(N, P))
+y = pd.Series(np.random.randn(N))
 
-tree = DecisionTree(criterion='information_gain') #Split based on Inf. Gain
-tree.fit(pd.DataFrame(X), pd.Series(y))
-tree.predict(pd.DataFrame(X))
-tree.plot()
+
+for criteria in ['information_gain', 'gini_index']:
+    tree = DecisionTree(criterion=criteria) #Split based on Inf. Gain
+    tree.fit(X, y)
+    y_hat = tree.predict(X)
+    tree.plot()
+    print('Criteria :', criteria)
+    print('RMSE: ', rmse(y_hat, y))
+    print('MAE: ', mae(y_hat, y))
 
 # Test case 2
 # Real Input and Discrete Output
 
 N = 30
 P = 5
-X = np.random.randn(N, P)
-y = np.random.randint(P, size = N)
+X = pd.DataFrame(np.random.randn(N, P))
+y = pd.Series(np.random.randint(P, size = N), dtype="category")
 
-tree = DecisionTree(criterion='information_gain') #Split based on Inf. Gain
-tree.fit(pd.DataFrame(X), pd.Series(y, dtype="category"))
-tree.predict(pd.DataFrame(X))
-tree.plot()
+for criteria in ['information_gain', 'gini_index']:
+    tree = DecisionTree(criterion=criteria) #Split based on Inf. Gain
+    tree.fit(X, y)
+    y_hat = tree.predict(X)
+    tree.plot()
+    print('Criteria :', criteria)
+    print('Accuracy: ', accuracy(y_hat, y))
+    for cls in y.unique():
+        print('Precision: ', precision(y_hat, y, cls))
+        print('Recall: ', recall(y_hat, y, cls))
+
 
 # Test case 3
 # Discrete Input and Discrete Output
 
 N = 30
 P = 5
-X = np.random.randint(N,size = (N,P))
-y = np.random.randint(P, size = N)
+X = pd.DataFrame(np.random.randint(N,size = (N,P)))
+y = pd.Series(np.random.randint(P, size = N))
 
-tree = DecisionTree(criterion='information_gain') #Split based on Inf. Gain
-tree.fit(pd.DataFrame(X), pd.Series(y, dtype="category"))
-tree.predict(pd.DataFrame(X))
-tree.plot()
+for criteria in ['information_gain', 'gini_index']:
+    tree = DecisionTree(criterion=criteria) #Split based on Inf. Gain
+    tree.fit(X, y)
+    y_hat = tree.predict(X)
+    tree.plot()
+    print('Criteria :', criteria)
+    print('Accuracy: ', accuracy(y_hat, y))
+    for cls in y.unique():
+        print('Precision: ', precision(y_hat, y, cls))
+        print('Recall: ', recall(y_hat, y, cls))
 
 # Test case 4
 # Discrete Input and Real Output
 
 N = 30
 P = 5
-X = np.random.randint(N,size = (N,P))
-y = np.random.randn(N)
+X = pd.DataFrame(np.random.randint(N,size = (N,P)))
+y = pd.Series(np.random.randn(N))
 
-tree = DecisionTree(criterion='information_gain') #Split based on Inf. Gain
-tree.fit(pd.DataFrame(X), pd.Series(y))
-tree.predict(pd.DataFrame(X))
-tree.plot()
+for criteria in ['information_gain', 'gini_index']:
+    tree = DecisionTree(criterion=criteria) #Split based on Inf. Gain
+    tree.fit(X, y)
+    y_hat = tree.predict(X)
+    tree.plot()
+    print('Criteria :', criteria)
+    print('RMSE: ', rmse(y_hat, y))
+    print('MAE: ', mae(y_hat, y))
