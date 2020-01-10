@@ -19,21 +19,20 @@ You should run _usage.py_ to check your solutions.
 
     b) Use 5 fold cross-validation on the dataset. Using nested cross-validation find the optimum depth of the tree. **[2 marks]**
 
-4. 
+3. 
     a) Show the usage of your decision tree for the [real estate price prediction regression](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set) problem. **[1 mark]**
+    
     b) Compare the performance of your model with the decision tree module from scikit learn. **[1 mark]**
     
-5. Create some fake data to do some experiments on the runtime complexity of your decision tree algorithm. Create a dataset with N samples and M binary features. Vary M and N to plot the time taken for: 1) learning the tree, 2) predicting for test data. How do these results compare with theoretical time complexity for decision tree creation and prediction. You should do the comparison for all the four cases of decision trees. **[2 marks]**	
+    You should be editing `iris-experiments.py` for the code containing the experiments and 1.md for the plots/results and their analysis.
+    
+4. Create some fake data to do some experiments on the runtime complexity of your decision tree algorithm. Create a dataset with N samples and M binary features. Vary M and N to plot the time taken for: 1) learning the tree, 2) predicting for test data. How do these results compare with theoretical time complexity for decision tree creation and prediction. You should do the comparison for all the four cases of decision trees. You should be editing `experiments.py` for the code containing the experiments and 1.md for the plots and their analysis. **[2 marks]**	
 	
 
 
 You can write your queries about assignment 1 in this [Google Doc](https://docs.google.com/document/d/1F94IMZWgsdlNXAzkRMXOpcfg7RXhEcPuv37KtY391_M/edit?usp=sharing).
 The Google Doc will be the **_only_** medium for query resolution.
 
-
-### Information about files
-
-`1.md`: Write answers to subjective questions in this file.
 
 
  
