@@ -26,9 +26,11 @@ The code should be written in Python and not use existing libraries other than t
     
     b) Compare the performance of your model with the decision tree module from scikit learn. **[1 mark]**
     
-    You should be editing `iris-experiments.py` for the code containing the experiments and 1.md for the plots/results and their analysis.
+   > You should be editing `iris-experiments.py` for the code containing the experiments and 1.md for the plots/results and their analysis.
     
-4. Create some fake data to do some experiments on the runtime complexity of your decision tree algorithm. Create a dataset with N samples and M binary features. Vary M and N to plot the time taken for: 1) learning the tree, 2) predicting for test data. How do these results compare with theoretical time complexity for decision tree creation and prediction. You should do the comparison for all the four cases of decision trees. You should be editing `experiments.py` for the code containing the experiments and 1.md for the plots and their analysis. **[2 marks]**	
+4. Create some fake data to do some experiments on the runtime complexity of your decision tree algorithm. Create a dataset with N samples and M binary features. Vary M and N to plot the time taken for: 1) learning the tree, 2) predicting for test data. How do these results compare with theoretical time complexity for decision tree creation and prediction. You should do the comparison for all the four cases of decision trees. **[2 marks]**	
+
+>You should be editing `experiments.py` for the code containing the experiments and 1.md for the plots and their analysis. 
 	
 
 
