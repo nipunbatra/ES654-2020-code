@@ -28,7 +28,7 @@ def information_gain(Y, attr):
     
     Inputs:
     > Y: pd.Series of Labels
-    > attr: attribute at which the gain should be calculated
+    > attr: pd.Series of attribute at which the gain should be calculated
     Outputs:
     > Return the information gain as a float
     """
