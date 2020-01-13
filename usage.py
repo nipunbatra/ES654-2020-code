@@ -57,8 +57,8 @@ for criteria in ['information_gain', 'gini_index']:
 
 N = 30
 P = 5
-X = pd.DataFrame(np.random.randint(N,size = (N,P)))
-y = pd.Series(np.random.randint(P, size = N))
+X = pd.DataFrame({i:pd.Series(np.random.randint(P, size = N), dtype="category") for i in range(5)})
+y = pd.Series(np.random.randint(P, size = N), , dtype="category")
 
 for criteria in ['information_gain', 'gini_index']:
     tree = DecisionTree(criterion=criteria) #Split based on Inf. Gain
@@ -76,7 +76,7 @@ for criteria in ['information_gain', 'gini_index']:
 
 N = 30
 P = 5
-X = pd.DataFrame(np.random.randint(N,size = (N,P)))
+X = pd.DataFrame({i:pd.Series(np.random.randint(P, size = N), dtype="category") for i in range(5)})
 y = pd.Series(np.random.randn(N))
 
 for criteria in ['information_gain', 'gini_index']:
