@@ -15,11 +15,12 @@ from .utils import entropy, information_gain, gini_index
 np.random.seed(42)
 
 class DecisionTree():
-    def __init__(self, criterion):
+    def __init__(self, criterion, max_depth):
         """
         Put all infromation to initialize your tree here.
         Inputs:
-        > criterion : {"information_gain", "gini_index"}
+        > criterion : {"information_gain", "gini_index"} # criterion won't be used for regression
+        > max_depth : The maximum depth the tree can grow to 
         """
         pass
 
