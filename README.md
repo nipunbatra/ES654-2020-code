@@ -4,9 +4,9 @@ Q1 b) Implement AdaBoostClassifier on Iris data set. Fix a random seed of 42. Sh
 
 Q2 a) Complete the LinearRegression class in `linearRegression/linearRegression.py` to implement linear regression with option of fit_intercept and method as normal equation.
 
-Q2 b) Timing for LinearRegression(). What is the time complexity of solving linear regression using normal equations? Vary the number of samples and number of features to verify if the theoretical complexity matches empirical evidence.
+Q2 b) Timing for LinearRegression(). What is the time complexity of solving linear regression using normal equations? Vary the number of samples and number of features to verify if the theoretical complexity matches empirical evidence. You can include your code in `q2_linearRegression.py`.
 
-Q2 c) Implement LinearRegression() on RealEstate dataset (as done earlier in assignment 1). Use 5-fold cross-validation. Plot the learnt coefficients across the five folds and calculate the train and test MAE across each of the fold.
+Q2 c) Implement LinearRegression() on RealEstate dataset (as done earlier in assignment 1). Use 5-fold cross-validation. Plot the learnt coefficients across the five folds and calculate the train and test MAE across each of the fold. Include code in `linear_regression_realestate.py`
 
 Q3 a) Implement Bagging(BaseModel, num_estimators): where base model could be DecisionTree (or sklearn decision tree) you have implemented. In a later assignment, you would have to implement the above over LinearRegression() also.
 
