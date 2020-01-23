@@ -1,4 +1,4 @@
-Q1 a) Implement Adaboost on Decision Stump (depth -1 tree]. You could use Decision Tree learnt in assignment #1 or sklearn decision tree and solve it for the case of real input and discrete output.
+Q1 a) Implement Adaboost on Decision Stump (depth -1 tree). You could use Decision Tree learnt in assignment #1 or sklearn decision tree and solve it for the case of real input and discrete output. Edit `ensemble/ADABoost.py`
 
 Q1 b) Implement AdaBoostClassifier on Iris data set. Fix a random seed of 42. Shuffle the dataset according to this random seed. Use the first 60% of the data for training and last 40% of the data set for testing. Using sepal width and petal width as the two features, plot the decision surfaces as done for Q1a) and compare the accuracy of AdaBoostClassifier using 3 estimators over decision stump.  
 
