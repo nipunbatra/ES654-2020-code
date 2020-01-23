@@ -1,10 +1,9 @@
 
 class LinearRegression():
-    def __init__(self, fit_intercept=True, normalize=False):
+    def __init__(self, fit_intercept=True, method='normal'):
         '''
 
         :param fit_intercept: Whether to calculate the intercept for this model. If set to False, no intercept will be used in calculations (i.e. data is expected to be centered).
-        :param normalize: This parameter is ignored when fit_intercept is set to False. If True, the regressors X will be normalized before regression by subtracting the mean and dividing by the l2-norm.
         :param method:
         '''
 
@@ -24,14 +23,19 @@ class LinearRegression():
         '''
         Funtion to run the LinearRegression on a data point
         :param X: pd.DataFrame with rows as samples and columns as features
-        :return: y: pd.Series with rows corresponding to output variable. THe output variable in a row is the prediction for sample in corresponding row in X.
+        :return: y: pd.Series with rows corresponding to output variable. The output variable in a row is the prediction for sample in corresponding row in X.
         '''
 
         pass
 
-    def plot(self):
+    def plot_residuals(self):
         """
-        Function to plot for the LinearRegression
+        Function to plot the residuals for LinearRegression on the train set and the fit. This method can only be called when `fit` has been earlier invoked.
+
+        This should plot a figure with 1 row and 3 columns
+        Column 1 is a scatter plot of ground truth(y) and estimate(\hat{y})
+        Column 2 is a histogram/KDE plot of the residuals and the title is the mean and the variance
+        Column 3 plots a bar plot on a log scale showing the coefficients of the different features and the intercept term (\theta_i)
 
         """
         pass

@@ -32,7 +32,15 @@ class RandomForestClassifier():
 
     def plot(self):
         """
-        Function to plot for the RandomForestClassifier
+        Function to plot for the RandomForestClassifier.
+        It creates three figures
+
+        1. Creates a figure with 1 row and `n_estimators` columns. Each column plots the learnt tree. If using your sklearn, this could a matplotlib figure.
+        If using your own implementation, it could simply invole print functionality of the DecisionTree you implemented in assignment 1 and need not be a figure.
+
+        2. Creates a figure showing the decision surface for each estimator
+
+        3. Creates a figure showing the combined decision surface
 
         """
         pass
@@ -40,7 +48,7 @@ class RandomForestClassifier():
 
 
 class RandomForestRegressor():
-    def __init__(self, n_estimators=100, criterion='mse', max_depth=None):
+    def __init__(self, n_estimators=100, criterion='variance', max_depth=None):
         '''
         :param n_estimators: The number of trees in the forest.
         :param criterion: The function to measure the quality of a split.
@@ -70,7 +78,15 @@ class RandomForestRegressor():
 
     def plot(self):
         """
-        Function to plot for the RandomForestRegressor
+        Function to plot for the RandomForestClassifier.
+        It creates three figures
+
+        1. Creates a figure with 1 row and `n_estimators` columns. Each column plots the learnt tree. If using your sklearn, this could a matplotlib figure.
+        If using your own implementation, it could simply invole print functionality of the DecisionTree you implemented in assignment 1 and need not be a figure.
+
+        2. Creates a figure showing the decision surface/estimation for each estimator. Similar to slide 9, lecture 4
+
+        3. Creates a figure showing the combined decision surface/prediction
 
         """
         pass

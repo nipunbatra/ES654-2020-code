@@ -1,11 +1,11 @@
 
 class AdaBoostClassifier():
-    def __init__(self, base_estimator, n_estimators=50, learning_rate=1.0): # Optional Arguments: Type of estimator
+    def __init__(self, base_estimator, n_estimators=3): # Optional Arguments: Type of estimator
         '''
-        :param base_estimator: The base estimator model from which the boosted ensemble is built (e.g., DecisionTree, LinearRegression). If None, then the base estimator is DecisionTreeRegressor(max_depth=3).
+        :param base_estimator: The base estimator model instance from which the boosted ensemble is built (e.g., DecisionTree, LinearRegression).
+                               If None, then the base estimator is DecisionTreeClassifier(max_depth=1).
                                You can pass the object of the estimator class
-        :param n_estimators: The maximum number of estimators at which boosting is terminated. In case of perfect fit, the learning procedure is stopped early.
-        :param learning_rate: Learning rate shrinks the contribution of each classifier by learning_rate. There is a trade-off between learning_rate and n_estimators.
+        :param n_estimators: The maximum number of estimators at which boosting is terminated. In case of perfect fit, the learning procedure may be stopped early.
         '''
 
         pass
@@ -21,7 +21,6 @@ class AdaBoostClassifier():
 
     def predict(self, X):
         """
-        Funtion to run the AdaBoostClassifier on a data point
         Input:
         X: pd.DataFrame with rows as samples and columns as features
         Output:
@@ -31,46 +30,16 @@ class AdaBoostClassifier():
 
     def plot(self):
         """
-        Function to plot for the AdaBoostClassifier
+        Function to plot the decision surface for AdaBoostClassifier for each estimator(iteration).
+        Creates two figures
+        Figure 1 consists of 1 row and `n_estimators` columns
+        The title of each of the estimator should be associated alpha (similar to slide#38 of course lecture on ensemble learning)
+        Further, the scatter plot should have the marker size corresponnding to the weight of each point.
 
-        """
-        pass
+        Figure 2 should also create a decision surface by combining the individual estimators
 
+        Reference for decision surface: https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html
 
-class AdaBoostRegressor():
-    def __init__(self, base_estimator, n_estimators=50, learning_rate=1.0):
-        '''
-        :param base_estimator: The base estimator model from which the boosted ensemble is built (e.g., DecisionTree). If None, then the base estimator is DecisionTreeRegressor(max_depth=3).
-                               You can pass the object of the estimator class
-        :param n_estimators: The maximum number of estimators at which boosting is terminated. In case of perfect fit, the learning procedure is stopped early.
-        :param learning_rate: Learning rate shrinks the contribution of each regressor by learning_rate. There is a trade-off between learning_rate and n_estimators.
-        '''
-
-        pass
-
-
-    def fit(self, X, y):
-        """
-        Function to train and construct the AdaBoostRegressor
-        Inputs:
-        X: pd.DataFrame with rows as samples and columns as features (shape of X is N X P) where N is the number of samples and P is the number of columns.
-        y: pd.Series with rows corresponding to output variable (shape of Y is N)
-        """
-        pass
-
-    def predict(self, X):
-        """
-        Funtion to run the AdaBoostRegressor on a data point
-        Input:
-        X: pd.DataFrame with rows as samples and columns as features
-        Output:
-        y: pd.Series with rows corresponding to output variable. THe output variable in a row is the prediction for sample in corresponding row in X.
-        """
-        pass
-
-    def plot(self):
-        """
-        Function to plot for the AdaBoostRegressor
-
+        This function should return [fig1, fig2]
         """
         pass

@@ -1,22 +1,17 @@
-Q1. Implement Adaboost on Decision Stump (they should  use Decision Tree learnt in assignment #1) and solve it for the case of real input and discrete output (like iris data set)
+Q1 a) Implement Adaboost on Decision Stump (depth -1 tree]. You could use Decision Tree learnt in assignment #1 or sklearn decision tree and solve it for the case of real input and discrete output.
 
-Q2. Implement LinearRegression(fit_intercept: True, method='normal') to implement linear regression with option of fit_intercept and method as normal equation.
+Q1 b) Implement AdaBoostClassifier on Iris data set. Fix a random seed of 42. Shuffle the dataset according to this random seed. Use the first 60% of the data for training and last 40% of the data set for testing. Using sepal width and petal width as the two features, plot the decision surfaces as done for Q1a) and compare the accuracy of AdaBoostClassifier using 3 estimators over decision stump.  
 
-Q3. Implement Bagging(BaseModel, num_estimators): where base model could be LinearRegression or DecisionTree they have implemented.
+Q2 a) Implement LinearRegression() to implement linear regression with option of fit_intercept and method as normal equation.
 
-Q4. Implement RandomForest(DecisionTree, num_estimators)
+Q2 b) Timing for LinearRegression(). What is the time complexity of solving linear regression using normal equations? Vary the number of samples and number of features to verify if the theoretical complexity matches empirical evidence.
 
-### Implementation details
-    > You should be editing the following files.
-    - metrics.py: Complete the performance metrics functions in this file.
-    - usage.py: Run this file to check your solutions.
-    - Directory: Module for classification and regression
-      - models/utils.py: Complete all utility functions.
-      - models/decisionTree.py : Complete Decision Tree Class from Assignment 1.
-      - models/ADABoost.py: Question 1
-      - models/linearRegression.py: Question 2
-      - models/bagging.py: Question 3
-      - models/randomForest.py: Question 4
+Q2 c) Implement LinearRegression() on RealEstate dataset (as done earlier in assignment 1). Use 5-fold cross-validation. Plot the learnt coefficients across the five folds and calculate the train and test MAE across each of the fold.
 
-      - __init__.py: ** Do not edit this **
-    > You should run qX_Y.py to check your solutions, where X is question and Y is a method.
+Q3 a) Implement Bagging(BaseModel, num_estimators): where base model could be DecisionTree (or sklearn decision tree) you have implemented. In a later assignment, you would have to implement the above over LinearRegression() also.
+
+Q3 b) Reproduce slides 13 to 17 from ensemble learning lecture. This would involve running Bagging(DecisionTree(), 5) on the dataset shown in lecture slides (real input and discrete output).
+
+Q4 a) Implement RandomForest(DecisionTree(), num_estimators)
+
+Q4 b) Generate the plots for Iris data set. Fix a random seed of 42. Shuffle the dataset according to this random seed. Use the first 60% of the data for training and last 40% of the data set for testing. Using sepal width and petal width as the two features.
