@@ -12,9 +12,9 @@ Q3 a) Implement Bagging(BaseModel, num_estimators): where base model could be De
 
 Q3 b) Reproduce slides 13 to 17 from ensemble learning lecture. This would involve running Bagging(DecisionTree(), 5) on the dataset shown in lecture slides (real input and discrete output).
 
-Q4 a) Implement RandomForest(DecisionTree(), num_estimators)
+Q4 a) Implement RandomForestClassifier() and RandomForestRegressor() classes in `tree/randomForest.py`. Use `q4_RandomForest.py` for testing.
 
-Q4 b) Generate the plots for Iris data set. Fix a random seed of 42. Shuffle the dataset according to this random seed. Use the first 60% of the data for training and last 40% of the data set for testing. Using sepal width and petal width as the two features.
+Q4 b) Generate the plots for Iris data set. Fix a random seed of 42. Shuffle the dataset according to this random seed. Use the first 60% of the data for training and last 40% of the data set for testing. Using sepal width and petal width as the two features. Include you code in `random_forest_iris.py`
 
 
 Doubts about the assignment may be clarified here: https://docs.google.com/document/d/1oA-N4g7fBNLDlD3fHR5fKdaoInqHOB9qc9dZGKLTFII/edit?usp=sharing
