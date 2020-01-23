@@ -2,7 +2,7 @@ Q1 a) Implement Adaboost on Decision Stump (depth -1 tree). You could use Decisi
 
 Q1 b) Implement AdaBoostClassifier on Iris data set. Fix a random seed of 42. Shuffle the dataset according to this random seed. Use the first 60% of the data for training and last 40% of the data set for testing. Using sepal width and petal width as the two features, plot the decision surfaces as done for Q1a) and compare the accuracy of AdaBoostClassifier using 3 estimators over decision stump. Include your code in `q1_ADABoost.py`.
 
-Q2 a) Implement LinearRegression() to implement linear regression with option of fit_intercept and method as normal equation.
+Q2 a) Complete the LinearRegression class in `linearRegression/linearRegression.py` to implement linear regression with option of fit_intercept and method as normal equation.
 
 Q2 b) Timing for LinearRegression(). What is the time complexity of solving linear regression using normal equations? Vary the number of samples and number of features to verify if the theoretical complexity matches empirical evidence.
 
