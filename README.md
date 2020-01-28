@@ -10,7 +10,7 @@ Q2 c) Implement LinearRegression() on RealEstate dataset (as done earlier in ass
 
 Q3 a) Implement Bagging(BaseModel, num_estimators): where base model is be DecisionTree (or sklearn decision tree) you have implemented. In a later assignment, you would have to implement the above over LinearRegression() also. Edit `ensemble/bagging.py`. Use `q3_Bagging.py` for testing.[EDIT: *We will be implementing only for DecisionTrees [2 marks*]]
 
-Q3 b) Reproduce slides 13 to 17 from ensemble learning lecture. This would involve running Bagging(DecisionTree(), 5) on the dataset shown in lecture slides (real input and discrete output).[[1 mark*]]
+Q3 b) Reproduce slides 13 to 17 from ensemble learning lecture. This would involve running Bagging(DecisionTree(), 5) on the dataset shown in lecture slides (real input and discrete output).[[2 mark*]]
 
 Q4 a) Implement RandomForestClassifier() and RandomForestRegressor() classes in `tree/randomForest.py`. Use `q4_RandomForest.py` for testing.[*2 marks*]
 
